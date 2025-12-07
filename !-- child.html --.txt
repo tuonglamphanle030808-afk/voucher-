@@ -1,0 +1,22 @@
+<!-- child.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trang con - Voucher</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:24px;background:#f7fbff;color:#012a4a;}
+    .card{max-width:720px;margin:32px auto;padding:18px;border-radius:10px;background:#fff;box-shadow:0 8px 24px rgba(2,20,38,0.08);}
+    h1{margin-top:0;color:#013a63;}
+    a.btn{display:inline-block;padding:10px 18px;background:#2b6cb0;color:#fff;border-radius:8px;text-decoration:none;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Voucher của bạn</h1>
+    <p>Chúc mừng! Bạn đã vào trang con dành cho voucher. Ở đây bạn có thể đặt mã giảm giá, hướng dẫn sử dụng, hay bất kỳ nội dung nào.</p>
+    <p><a href="#" class="btn">Ví dụ: Nhận mã</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voucher Button Embed</title>
+  <style>
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:transparent;}
+    .wrap{height:100%;display:flex;align-items:center;justify-content:center;padding:18px;}
+    .voucher-btn {
+      display:inline-block;
+      text-decoration:none;
+      color:#fff;
+      background: linear-gradient(90deg, #012a4a 0%, #2b6cb0 50%, #89c2ff 100%);
+      padding: 16px 56px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(2,20,38,0.45), inset 0 -2px 6px rgba(255,255,255,0.03);
+      position: relative;
+      overflow: visible;
+      transform-origin:center;
+      transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms;
+      font-weight:700;
+      font-size:20px;
+      line-height:1;
+    }
+    .voucher-btn::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      width:72%;
+      height:50%;
+      background:radial-gradient(closest-side, rgba(255,255,255,0.18), rgba(255,255,255,0) 60%);
+      filter:blur(10px);
+      z-index:0;
+      pointer-events:none;
+    }
+    .voucher-btn > span{position:relative;z-index:2;text-shadow:0 2px 6px rgba(0,0,0,0.35);}
+    @keyframes pulseScale {
+      0% { transform: scale(1); }
+      50%{ transform: scale(1.06); }
+      100%{ transform: scale(1); }
+    }
+    .voucher-btn.animate{animation:pulseScale 2.8s infinite ease-in-out;}
+    .voucher-btn:hover{transform:scale(1.1);box-shadow:0 18px 40px rgba(2,20,38,0.55), inset 0 -3px 8px rgba(255,255,255,0.04);}
+    @media(max-width:520px){
+      .voucher-btn{padding:12px 28px;font-size:16px;border-radius:12px;}
+      .voucher-btn::before{width:86%;height:60%;filter:blur(8px);}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!--
+      Thay đổi href thành đường dẫn tới trang con bạn muốn.
+      Nếu bạn host child.html trong cùng chỗ (cùng repo), dùng "child.html".
+      target có thể là _self (mở trong iframe) hoặc _top / _parent / _blank tùy ý.
+    -->
+    <a class="voucher-btn animate" href="child.html" role="button" aria-label="Mở trang voucher" target="_top">
+      <span>Voucher</span>
+    </a>
+  </div>
+</body>
+</html>
