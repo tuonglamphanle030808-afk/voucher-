@@ -58,9 +58,10 @@
       Nếu bạn host child.html trong cùng chỗ (cùng repo), dùng "child.html".
       target có thể là _self (mở trong iframe) hoặc _top / _parent / _blank tùy ý.
     -->
-    <a class="voucher-btn animate" href="child.html" role="button" aria-label="Mở trang voucher" target="_top">
+    <a class="voucher-btn animate" href="https://sites.google.com/d/1sRQsKhqrSo02w2uXQNMK9svqNvLFmF6q/p/1sReuhqb14Jz5aYk63SEn6bXPFBA8D7TU/edit" role="button" aria-label="Mở trang voucher" target="_top">
       <span>Voucher</span>
     </a>
   </div>
 </body>
 </html>
+
